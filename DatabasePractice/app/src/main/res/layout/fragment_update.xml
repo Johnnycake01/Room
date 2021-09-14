@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.update.UpdateFragment">
+
+
+    <EditText
+        android:id="@+id/edUpdateFullNAme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edUpdateLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        app:layout_constraintEnd_toEndOf="@+id/edUpdateFullNAme"
+        app:layout_constraintStart_toStartOf="@+id/edUpdateFullNAme"
+        app:layout_constraintTop_toBottomOf="@+id/edUpdateFullNAme" />
+
+    <EditText
+        android:id="@+id/edUpdateAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        app:layout_constraintEnd_toEndOf="@+id/edUpdateLastName"
+        app:layout_constraintStart_toStartOf="@+id/edUpdateLastName"
+        app:layout_constraintTop_toBottomOf="@+id/edUpdateLastName" />
+
+    <Button
+        android:id="@+id/btUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edUpdateAge"
+        app:layout_constraintStart_toStartOf="@+id/edUpdateAge"
+        app:layout_constraintTop_toBottomOf="@+id/edUpdateAge"
+        app:layout_constraintVertical_bias="0.21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

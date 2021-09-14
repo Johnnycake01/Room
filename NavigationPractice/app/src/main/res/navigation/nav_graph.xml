@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.navigationpractice.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_loginFragment_to_listOfPokemonFragment2"
+            app:destination="@id/listOfPokemonFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.navigationpractice.ui.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/listOfPokemonFragment2"
+        android:name="com.example.navigationpractice.ui.ListOfPokemonFragment"
+        android:label="fragment_list_of_pokemon"
+        tools:layout="@layout/fragment_list_of_pokemon" />
+
+</navigation>

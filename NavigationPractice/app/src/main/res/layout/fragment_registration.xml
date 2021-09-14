@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.RegistrationFragment">
+
+
+    <TextView
+        android:id="@+id/tvRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="#5459FD"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/full_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRegistration"
+        />
+    <EditText
+        android:id="@+id/edRegMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email"
+        app:layout_constraintStart_toStartOf="@id/edFullName"
+        app:layout_constraintEnd_toEndOf="@id/edFullName"
+        app:layout_constraintTop_toBottomOf="@id/edFullName"
+        />
+    <EditText
+        android:id="@+id/edRegPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        app:layout_constraintStart_toStartOf="@id/edRegMail"
+        app:layout_constraintEnd_toEndOf="@id/edRegMail"
+        app:layout_constraintTop_toBottomOf="@id/edRegMail"
+        />
+    <Button
+        android:id="@+id/btSubmitReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/edRegPassword"
+        app:layout_constraintEnd_toEndOf="@id/edRegPassword"
+        app:layout_constraintTop_toBottomOf="@id/edRegPassword"
+        android:text="@string/register"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
